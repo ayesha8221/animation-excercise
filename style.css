@@ -1,12 +1,10 @@
 *{margin: 0;
-/* padding: 0; */
 }
 
 nav {
     background-color: tan;
-    /* float: right; */
     position: relative;
-    padding: 15px 10px 30px 20px;
+    padding: 15px 10px 30px 30px;
 }
 
 
@@ -16,16 +14,20 @@ li{
     background-image: url(./assets/Butterfly\ \(1\).png);
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 90px;
+    background-size: 160px;
     align-items: center;
 }
 
 nav a{
     float: right;
     background-color: tan;
-    color: blueviolet;
-    font-size: 22px;
+    color: purple;
+    font-size: 25px;
     line-height: 10px;
+}
+
+.nav-links{
+    margin-right: 30px;
 }
 
 /* ANIMATION SECTION */
@@ -36,6 +38,7 @@ h1{
  
 body {
     background-color: rgb(240, 219, 182);
+    
  }
 
 /* FLIP-CARD SECTION */
@@ -82,12 +85,25 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    gap: 100px 150px;
+    gap: 50px 60px;
     width: 100%;
 }
 
 /* Footer section */
-.Logo {
-    display: flex;
-    flex: left;
- }
+
+footer {
+    background-color: tan;
+    padding: 15px 10px 20px 30px ;
+}
+
+.LOGO {
+    width: 200px;
+    height: auto;
+    align-content: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    float: right;
+}
