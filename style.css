@@ -1,12 +1,10 @@
 *{margin: 0;
-/* padding: 0; */
 }
 
 nav {
     background-color: tan;
-    /* float: right; */
     position: relative;
-    padding: 15px 10px 30px 20px;
+    padding: 15px 10px 30px 30px;
 }
 
 
@@ -16,16 +14,23 @@ li{
     background-image: url(./assets/Butterfly\ \(1\).png);
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 90px;
+    background-size: 160px;
     align-items: center;
 }
 
 nav a{
     float: right;
     background-color: tan;
-    color: blueviolet;
-    font-size: 22px;
+    color: rgb(149, 75, 217);
+    font-size: 25px;
     line-height: 10px;
+}
+nav a:hover {
+    color: rgb(185, 124, 241);
+}
+
+.nav-links{
+    margin-right: 30px;
 }
 
 /* ANIMATION SECTION */
@@ -36,6 +41,7 @@ h1{
  
 body {
     background-color: rgb(240, 219, 182);
+    
  }
 
 /* FLIP-CARD SECTION */
@@ -73,8 +79,8 @@ body {
     color: black;
 }
 .flip-card-back {
-    background-color: blueviolet;
-    color: tan;
+    background-color: tan;
+    color: blueviolet;
     transform: rotateY(180deg);
 }
 
@@ -82,17 +88,75 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    gap: 100px 150px;
+    gap: 50px 60px;
     width: 100%;
 }
 
 /* Footer section */
-.Logo {
-    display: flex;
-    flex: left;
- }
 
- img {
-    flex:right;
-    justify-content: end;
- }
+footer {
+    background-color: tan;
+    padding: 15px 10px 60px 30px ;
+}
+
+.LOGO {
+    width: 200px;
+    height: auto;
+    /* align-content: center; */
+    float:left;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.grid-container2 {
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    display: flex;
+ } 
+
+a {
+    margin-left: 20px;
+    line-height: 30px;
+    color: rgb(140, 57, 219);
+    position: relative;
+}
+
+a:hover {
+    color: rgb(174, 138, 208);
+}
+
+.animate-character
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -250deg,
+        #d78afa 29%,
+        #935ccd 67%,
+        #8112a2 100%,
+        #38053d 0%
+    );
+    background-size: auto auto;
+    background clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 40px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
