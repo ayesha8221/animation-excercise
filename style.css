@@ -21,12 +21,16 @@ li{
 nav a{
     float: right;
     background-color: tan;
-    color: rgb(149, 75, 217);
-    font-size: 25px;
+    color: blueviolet;
+    font-size: 22px;
     line-height: 10px;
 }
 nav a:hover {
     color: rgb(185, 124, 241);
+}
+
+.nav-links{
+    margin-right: 30px;
 }
 
 .nav-links{
@@ -93,70 +97,12 @@ body {
 }
 
 /* Footer section */
-
-footer {
-    background-color: tan;
-    padding: 15px 10px 60px 30px ;
-}
-
-.LOGO {
-    width: 200px;
-    height: auto;
-    /* align-content: center; */
-    float:left;
-}
-
-.logo {
-    width: 30px;
-    height: auto;
-    float: right;
-    margin-right: 20px;
-    margin-left: 0px;
-    position: relative;
-}
-
-.grid-container2 {
-    text-align: center;
-    grid-template-columns: auto auto auto;
+.Logo {
     display: flex;
- } 
+    flex: left;
+ }
 
-a {
-    margin-left: 20px;
-    line-height: 30px;
-    color: rgb(140, 57, 219);
-    position: relative;
-}
-
-a:hover {
-    color: rgb(174, 138, 208);
-}
-
-.animate-character
-{
-    text-transform: uppercase;
-    background-image: linear-gradient(
-        -250deg,
-        #d78afa 29%,
-        #935ccd 67%,
-        #8112a2 100%,
-        #38053d 0%
-    );
-    background-size: auto auto;
-    background clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 40px;
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-}
+ img {
+    flex:right;
+    justify-content: end;
+ }
